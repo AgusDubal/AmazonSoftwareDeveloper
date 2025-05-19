@@ -34,16 +34,15 @@ public class CoffeeMachine {
                     System.out.print("How many servings would you like? (a number please): ");
                     int numberOfShots = keyboard.nextInt();
 
-                    // TODO 8: Create an object of Espresso class using the parameterized constructor
-                    // TODO 8: Pass the espressoName, espressoRoast, espressoPrice, and numberOfShots as arguments in the correct order
+                    Espresso espresso = new Espresso(espressoName, espressoRoast, espressoPrice, numberOfShots);
 
-                    // TODO 9: Call the grindBeans() method on the Espresso object
+                    espresso.grindBeans();
 
-                    // TODO 10: Call the brewCoffee() method on the Espresso object
+                    espresso.brewCoffee();
 
-                    // TODO 11: Call the printInfo() method on the Espresso object
+                    espresso.printInfo();
 
-                    // TODO 12: Call the printEspressoDetails method on the Espresso object
+                    espresso.printEspressoDetails();
 
                     break;
                 case 2:
@@ -73,16 +72,16 @@ public class CoffeeMachine {
                         syrupFlavor = keyboard.next();
                     }
 
-                    // TODO 20: Create an object of Latte class using the parameterized constructor
-                    // TODO 20: Pass the latteName, latteRoast, lattePrice, milkType, and syrupFlavor as arguments in the correct order
+                    Latte latte = new Latte(latteName, latteRoast, lattePrice, milkType, syrupFlavor);
 
-                    // TODO 21: Call the grindBeans() method on the Latte object
 
-                    // TODO 22: Call the brewCoffee() method on the Latte object
+                    latte.grindBeans();
 
-                    // TODO 23: Call the printInfo() method on the Latte object
+                    latte.brewCoffee();
 
-                    // TODO 24: Call the printLatteDetails() method on the Latte object
+                    latte.printInfo();
+
+                    latte.printLatteDetails();
 
                     break;
                 case 3:

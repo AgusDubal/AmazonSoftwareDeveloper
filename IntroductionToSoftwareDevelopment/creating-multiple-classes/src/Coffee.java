@@ -18,14 +18,20 @@ public class Coffee {
 
     // Method to set the caffeine level of the coffee based on the roast
     public void setCaffeineLevel() {
-        if (roast.equals("light")) {
-            caffeineLevelInMg = 50;
-        } else if (roast.equals("medium")) {
-            caffeineLevelInMg = 100;
-        } else if (roast.equals("dark")) {
-            caffeineLevelInMg = 150;
-        } else {
-            caffeineLevelInMg = 0;
+        switch (roast.toLowerCase()) {
+            case "light":
+                caffeineLevelInMg = 50; // light roast has more caffeine
+                break;
+            case "medium":
+                caffeineLevelInMg = 100; // medium roast has moderate caffeine
+                break;
+            case "dark":
+                caffeineLevelInMg = 150; // dark roast has less caffeine
+                break;
+            default:
+                System.out.println("Invalid roast type. Setting caffeine level to 0 mg.");
+                caffeineLevelInMg = 0; // default value for invalid roast
+                break;
         }
     }
 
