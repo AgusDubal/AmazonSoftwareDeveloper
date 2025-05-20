@@ -8,6 +8,7 @@ public class CoffeeMachine {
         Scanner keyboard = new Scanner(System.in);
 
         // TODO 25: Create the object of CoffeeMaker Class
+        CoffeeMaker coffeeMaker = new CoffeeMaker();
 
         while (true) {
             System.out.println("\nWelcome to the Coffee Machine!");
@@ -45,11 +46,9 @@ public class CoffeeMachine {
                    
                    espresso.printInfo(); */
 
+                    coffeeMaker.prepareCoffee(espresso);
 
-
-                   // TODO 26: Call the prepareCoffee() method and pass the Espresso object as argument
-                   
-                   // TODO 27: Call the printInfo() method on the Espresso object
+                    espresso.printInfo();
 
                    break;
                case 2:
@@ -88,11 +87,9 @@ public class CoffeeMachine {
 
                    latte.printInfo();*/
 
-                   
+                   coffeeMaker.prepareCoffee(latte);
 
-                   // TODO 28: Call the prepareCoffee() method and pass the Latte object as argument
-
-                   // TODO 29: Call the printInfo() method on the Latte object
+                   latte.printInfo();
 
                    break;
                case 3:
