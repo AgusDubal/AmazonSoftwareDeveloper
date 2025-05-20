@@ -1,5 +1,11 @@
 public class Camera {
 
+    public void takePicture() {
+
+        System.out.println("Taking an 8 megapixels picture in landscape mode.");
+                
+    }
+
     public void takePicture(String mode) {
         System.out.println("Taking picture in " + mode + " mode.");
     }
