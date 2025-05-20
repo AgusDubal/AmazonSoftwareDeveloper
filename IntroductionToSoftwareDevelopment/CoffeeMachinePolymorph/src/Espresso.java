@@ -35,7 +35,6 @@ public class Espresso extends Coffee {
         
         super.printInfo();
 
-        
         System.out.println("You asked for " + numberOfShots + " servings!");
         System.out.println("Every serving of Espresso costs " + price + "$. Your total bill is " + (price * numberOfShots) + "$.");
 
