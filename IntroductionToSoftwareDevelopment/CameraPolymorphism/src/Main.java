@@ -7,7 +7,8 @@ public class Main {
         myFavoriteCamera.takePicture(12);
         myFavoriteCamera.takePicture("landscape", 24);
 
-        
+        SmartCamera mySmartCamera = new SmartCamera();
+        mySmartCamera.takePicture();
 
     }
 }
