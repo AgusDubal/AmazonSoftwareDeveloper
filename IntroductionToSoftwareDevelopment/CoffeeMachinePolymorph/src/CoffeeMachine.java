@@ -39,12 +39,14 @@ public class CoffeeMachine {
                    //Create an object of Espresso class using the parameterized constructor
                    Espresso espresso = new Espresso(espressoName, espressoRoast, espressoPrice, numberOfShots);
 
-                   
-                   espresso.grindBeans();
+                   /*espresso.grindBeans();
                    
                    espresso.brewCoffee(); 
                    
-                   espresso.printInfo(); 
+                   espresso.printInfo(); */
+
+
+
                    // TODO 26: Call the prepareCoffee() method and pass the Espresso object as argument
                    
                    // TODO 27: Call the printInfo() method on the Espresso object
@@ -80,11 +82,14 @@ public class CoffeeMachine {
 
                    Latte latte = new Latte(latteName, latteRoast, lattePrice, milkType, syrupFlavor);
 
-                   latte.grindBeans();
+                   /*latte.grindBeans();
 
                    latte.brewCoffee();
 
-                   latte.printInfo();
+                   latte.printInfo();*/
+
+                   
+
                    // TODO 28: Call the prepareCoffee() method and pass the Latte object as argument
 
                    // TODO 29: Call the printInfo() method on the Latte object
