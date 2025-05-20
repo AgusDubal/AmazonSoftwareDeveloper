@@ -39,11 +39,11 @@ public class CoffeeMachine {
                    //Create an object of Espresso class using the parameterized constructor
                    Espresso espresso = new Espresso(espressoName, espressoRoast, espressoPrice, numberOfShots);
 
-                   // TODO 8: Call the grindBeans() method on the Espresso object
+                   
                    espresso.grindBeans();
-                   // TODO 9: Call the brewCoffee() method on the Espresso object
+                   
                    espresso.brewCoffee(); 
-                   // TODO 10: Call the printInfo() method on the Espresso object
+                   
                    espresso.printInfo(); 
                    // TODO 26: Call the prepareCoffee() method and pass the Espresso object as argument
                    

@@ -16,22 +16,42 @@ public class Latte extends Coffee {
         this.syrupFlavor = syrupFlavor;
     }
 
-    // TODO 11: Override the grindBeans() method
+    
+    @Override
+    public void grindBeans() {
+        
+        System.out.println("\nGrinding coffee beans coarsely for a latte (medium grind)...");
 
-    // TODO 12: Override the brewCoffee() method to simulate brewing coffee for latte, and all the other preparation steps
+    }
+    
 
-    // TODO 13: Override the printInfo() method to print the common and specific details of espresso including the bill
+    @Override
+    public void brewCoffee() {
+        
+        System.out.println("Brewing coffee for a latte...");
+        
+        if (!syrupFlavor.equals("no)")) {
+        
+        System.out.println("Adding " + syrupFlavor + " syrup to the cup...");
+        }
+
+        System.out.println("Steaming " + milkType + " milk...");
+
+        System.out.println("Combining brewed coffee with steamed " + milkType + " milk...");
+
+        System.out.println("Adding a layer of foam on top...");
+
+    }
+
+
     @Override
     public void printInfo() {
-        // TODO 14: Call the printInfo() method from the Coffee class using super
 
-        // TODO 15: Cut the print statements from the printLatteDetails() method and paste them here
+        super.printInfo();
 
-    }
-
-    // TODO 16: Delete this method because it is not needed anymore
-    public void printLatteDetails() {
         System.out.println("Your latte has " + milkType + " milk and " + syrupFlavor + " flavor.");
         System.out.println("Your total bill is " + price + "$.");
+
     }
+
 }

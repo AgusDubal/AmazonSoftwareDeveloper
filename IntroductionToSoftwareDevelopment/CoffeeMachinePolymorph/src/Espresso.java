@@ -16,16 +16,14 @@ public class Espresso extends Coffee {
     @Override
     public void grindBeans() {
         
-        super.grindBeans();
-        System.out.println("\nThe espresso beans are ground to a fine powder.");
+        System.out.println("\nGrinding coffee beans finely for espresso (fine grind)...");
         
     }
     
     @Override
     public void brewCoffee() {
         
-        super.brewCoffee();
-        System.out.println("\nThe espresso is brewed with high pressure.");
+        System.out.println("\nBrewing espresso under high pressure...");
 
     }
 
