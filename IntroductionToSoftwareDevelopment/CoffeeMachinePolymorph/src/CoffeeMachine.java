@@ -77,15 +77,14 @@ public class CoffeeMachine {
                        syrupFlavor = keyboard.next();
                    }
 
-                   // TODO 17: Create an object of Latte class using the parameterized constructor
-                   // Pass the latteName, latteRoast, lattePrice, milkType, and syrupFlavor as arguments in the correct order
 
-                   // TODO 18: Call the grindBeans() method on the Latte object
+                   Latte latte = new Latte(latteName, latteRoast, lattePrice, milkType, syrupFlavor);
 
-                   // TODO 19: Call the brewCoffee() method on the Latte object
+                   latte.grindBeans();
 
-                   // TODO 20: Call the printInfo() method on the Latte object
+                   latte.brewCoffee();
 
+                   latte.printInfo();
                    // TODO 28: Call the prepareCoffee() method and pass the Latte object as argument
 
                    // TODO 29: Call the printInfo() method on the Latte object
