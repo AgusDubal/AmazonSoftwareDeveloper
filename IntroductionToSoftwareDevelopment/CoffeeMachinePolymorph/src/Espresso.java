@@ -13,22 +13,32 @@ public class Espresso extends Coffee {
         this.numberOfShots = numberOfShots;
     }
 
-    // TODO 1: Override the grindBeans() method to simulate grinding the espresso beans finely
+    @Override
+    public void grindBeans() {
+        
+        super.grindBeans();
+        System.out.println("\nThe espresso beans are ground to a fine powder.");
+        
+    }
+    
+    @Override
+    public void brewCoffee() {
+        
+        super.brewCoffee();
+        System.out.println("\nThe espresso is brewed with high pressure.");
 
-    // TODO 2: Override the brewCoffee() method to simulate brewing under high pressure
+    }
 
-    // TODO 3: Override the printInfo() method to print the common and specific details of espresso including the bill
+    
     @Override
     public void printInfo() {
-        // TODO 4: Call the printInfo() method from the Coffee class using super
+        
+        super.printInfo();
 
-        // TODO 5: Cut the print statements from the printEspressoDetails() method and paste them here
-
-    }
-
-    // TODO 6: Delete this method because it is not needed anymore
-    public void printEspressoDetails() {
+        
         System.out.println("You asked for " + numberOfShots + " servings!");
         System.out.println("Every serving of Espresso costs " + price + "$. Your total bill is " + (price * numberOfShots) + "$.");
+
     }
+
 }
