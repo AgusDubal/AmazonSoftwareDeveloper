@@ -39,21 +39,17 @@ public class Main {
 
                     sideKickObject.takeAction();
 
-
-                    /** TODO 7: Check if the "SideKick" class has implemented the
-                     *          "KungFuSkills" interface which you created in
-                     *          TODO 5. If it has implemented it, then call the
-                     *          method "kungFuProtection".
-                     **/
-
+                    if (sideKickObject instanceof KungFuSkills) {
+                        sideKickObject.kungFuProtection();
+                    } else {
+                        System.out.println("SideKick does not have KungFu skills.");
+                    }
 
                     break;
 
                 case 2:
-                    /** TODO 2: Use the "driverBot" object of WatADriver class
-                     *          to display the menu and then take the appropriate
-                     *           action as required.
-                     **/
+
+
                     driverBot.setChoice();
                     
                     driverBot.takeAction();
@@ -86,17 +82,6 @@ public class Main {
 
         } while (keepMenuRunning);
     }
-
-
-    /** TODO 3: Create an interface named "KungFuSkills" **/
-
-    /** TODO 4: In the interface "KungFuSkills" created in TODO 5,
-     *          get inside the curly braces of the interface  in order
-     *          to declare a method named "kungFuProtection()".
-     *          Ensure that the  return type of the method is "void".
-     **/
-
-
 
 
 }
